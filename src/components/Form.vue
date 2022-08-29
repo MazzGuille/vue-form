@@ -7,7 +7,7 @@
         <input v-model="password" type="password" required> 
         <input v-model="showPass" type="checkbox" style="margin-top: 10px;"> <span style="font-size: 11px;">Show password</span>
         <p v-if="showPass" style="border-bottom: 1px solid #ddd;">{{password}}</p>   
-        <div v-if="passwordError" class="error">{{passwordError}}</div>       
+        <p v-if="passwordError" class="error">{{passwordError}}</p>       
         <br>
         <label>Role</label>    
         <select v-model="rol">
